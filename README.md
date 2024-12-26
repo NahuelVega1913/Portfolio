@@ -1,4 +1,6 @@
-# Personal Portfolio A modern, responsive portfolio website built with Angular and PrimeNG, showcasing my projects and professional experience.
+# Personal Portfolio
+
+A modern, responsive portfolio website built with Angular and PrimeNG, showcasing my projects and professional experience.
 
 🚀 Features
 
