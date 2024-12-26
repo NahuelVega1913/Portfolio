@@ -12,17 +12,17 @@ Mobile-first approach
 
 🛠️ Technologies Used
 
-Angular 18+
-PrimeNG
-TypeScript
-SCSS
-HTML5
-Responsive Design
-Angular Animations
+- Angular 18+
+- PrimeNG
+- TypeScript
+- SCSS
+- HTML5
+- Responsive Design
+- Angular Animations
 
 📞 Contact
 Feel free to reach out if you have any questions or suggestions:
 
-Email: nahuelvegacsharp@gmail.com
-LinkedIn: www.linkedin.com/in/nahuel-vega-8b8010212
-GitHub: @yourusername
+- Email: nahuelvegacsharp@gmail.com
+- LinkedIn: www.linkedin.com/in/nahuel-vega-8b8010212
+- GitHub: @yourusername
