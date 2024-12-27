@@ -11,9 +11,34 @@
 }
 
 
-:root {
+/* :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
     --text-color: #333333;
     --background-color: #f4f4f4;
+  } */
+
+
+
+  .stronggreen{
+    background-color: #00e701;
+  }
+  .strongblack{
+    background-color: #0b0e0f;
+    color:#ffffff;
+  }
+  .midblack{
+    background-color: #191b1f;
+  }
+  .lightblack{
+    background-color: #24272c;
+  }
+  .extraligthblack{
+    background-color: #474f54;
+  }
+
+  .strongblack:focus{
+    background-color: #00d701;
+    border: none;
+    color:#0b0e0f;
   }
