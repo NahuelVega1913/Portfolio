@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "primeicons/primeicons.css";
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px; /* Ajusta el tamaño global */
+  font-weight: 400; /* Peso estándar */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333333;
+    --background-color: #f4f4f4;
+  }
