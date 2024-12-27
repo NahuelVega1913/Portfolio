@@ -36,9 +36,16 @@
   .extraligthblack{
     background-color: #474f54;
   }
+  .light{
+    background-color: white;
+    color: #191b1f;
+  }
 
   .strongblack:focus{
     background-color: #00d701;
     border: none;
     color:#0b0e0f;
+  }
+  .textgreen{
+    color:#00e701
   }
