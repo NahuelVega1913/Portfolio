@@ -12,3 +12,22 @@
  
  background: linear-gradient(to bottom,white,black);
 }
+.border-img{
+    border: 3px solid #474f54; 
+}
+
+.homesize{
+    height: 820px;
+}
+.title-translucient{
+    
+        font-family: 'Poppins', sans-serif; /* Usa una fuente moderna */
+         /* Color del texto */
+        font-size: 4rem; /* Ajusta según el tamaño deseado */
+        font-weight: 700; /* Asegúrate de que sea bold */
+        color: transparent; /* Hace el texto vacío */
+        -webkit-text-stroke: 1px white; /* Aplica el contorno */
+        text-align: center; /* Opcional, para centrar */
+    
+}
+
