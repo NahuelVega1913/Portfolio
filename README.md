@@ -27,4 +27,4 @@ Feel free to reach out if you have any questions or suggestions:
 
 - Email: nahuelvegacsharp@gmail.com
 - LinkedIn: www.linkedin.com/in/nahuel-vega-8b8010212
-- GitHub: @yourusername
+- Phone Number: Send me a message on LinkedIn or email if you want it
