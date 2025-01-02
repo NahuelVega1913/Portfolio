@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg strongblack">
   <div class="container-fluid">
     <a
-      class="navbar-brand ms-lg-5 ms-sm-0 align-items-sm-center justify-content-sm-center"
+      class="navbar-brand ms-lg-4 ms-sm-0 align-items-sm-center justify-content-sm-center"
       href="home"
     >
       <img
@@ -31,25 +31,25 @@
     >
       <ul class="navbar-nav align-items-center">
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack">Home</button>
+          <button type="button" class="btn strongblack fw-bold">Home</button>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack" href="proyects">
+          <button type="button" class="btn strongblack fw-bold" href="proyects">
             Proyects
           </button>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack" href="about">
+          <button type="button" class="btn strongblack fw-bold" href="about">
             About
           </button>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack" href="skills">
+          <button type="button" class="btn strongblack fw-bold" href="skills">
             Skills
           </button>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack" href="contact">
+          <button type="button" class="btn strongblack fw-bold" href="contact">
             Contact
           </button>
         </li>
@@ -66,9 +66,41 @@
     <div class="row">
       <div class="col-1 stronggreen homesize"></div>
       <div class="col-6 midblack homesize">
-        <p class="display-3 title-translucient">Hola</p>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-11 margin-top">
+            <p class="display-3 title-translucient">Hi there, I'm</p>
+            <p class="display-1 text-white fw-bolder sans-serif">Nahuel Vega</p>
+            <p class="display-3 title-translucient">Full Stack Developer</p>
+            <p
+              class="display-6 font-lightbold fw-semibold text-white sans-serif"
+            >
+              I’m passionate about crafting innovative <br />
+              solutions that bridge technology and <br />
+              user needs, driven by curiosity and a <br />
+              problem-solving mindset.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-5 lightblack homesize"></div>
+      <div
+        class="col-5 lightblack homesize d-flex align-content-end justify-content-center"
+      >
+        <div class="margin-top row justify-content-center">
+          <img
+            class="emoji col-12"
+            src="https://imgproxy.attic.sh/unsafe/rs:fit:540:540:1:1/t:1:FF00FF:false:false/aHR0cHM6Ly9hdHRp/Yy5zaC93N2M2Zndq/eW9xMWMzeXY3MTlq/cGV6c2w0cDRt.webp"
+            alt=""
+          />
+          <br />
+          <p-button
+            class="mt-3 col-12"
+            label="Success"
+            [rounded]="true"
+            severity="success"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <!--HOME-->

@@ -15,6 +15,12 @@
 .border-img{
     border: 3px solid #474f54; 
 }
+.font-lightbold{
+    font-weight: medium;
+    font-size: 24px;
+    opacity: 0.92;
+
+}
 
 .homesize{
     height: 820px;
@@ -26,8 +32,19 @@
         font-size: 4rem; /* Ajusta según el tamaño deseado */
         font-weight: 700; /* Asegúrate de que sea bold */
         color: transparent; /* Hace el texto vacío */
-        -webkit-text-stroke: 1px white; /* Aplica el contorno */
-        text-align: center; /* Opcional, para centrar */
-    
+        -webkit-text-stroke: 1.4px rgb(255, 255, 255); /* Aplica el contorno */
+         /* Opcional, para centrar */
 }
-
+.san-serif{
+    font-family: 'Poppins', sans-serif;
+}
+.emoji{
+    height: 400px;
+    width: 400px;
+}
+.margin-top{
+    margin-top: 170px;
+}
+.margin-start{
+    margin-left: 100px;
+}
