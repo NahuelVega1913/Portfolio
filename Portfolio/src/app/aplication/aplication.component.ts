@@ -11,6 +11,9 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { AutoFocusModule } from 'primeng/autofocus';
+import { Carousel } from 'primeng/carousel';
+import { TagModule } from 'primeng/tag';
+import { CommonModule, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-aplication',
@@ -18,6 +21,7 @@ import { AutoFocusModule } from 'primeng/autofocus';
   imports: [
     ButtonModule,
     Card,
+    CommonModule,
     CardModule,
     FocusTrapModule,
     ButtonModule,
@@ -27,6 +31,8 @@ import { AutoFocusModule } from 'primeng/autofocus';
     IconFieldModule,
     InputIconModule,
     AutoFocusModule,
+    Carousel,
+    TagModule,
   ],
   templateUrl: './aplication.component.html',
   styleUrl: './aplication.component.css',
@@ -37,4 +43,8 @@ export class AplicationComponent {
   email: string = '';
 
   accept: boolean = false;
+
+  products: undefined[] | undefined;
+
+  responsiveOptions: any[] | undefined;
 }

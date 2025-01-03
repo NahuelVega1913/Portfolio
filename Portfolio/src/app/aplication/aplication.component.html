@@ -31,27 +31,19 @@
     >
       <ul class="navbar-nav align-items-center">
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack fw-bold">Home</button>
+          <a class="btn strongblack fw-bold" href="#home">Home</a>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack fw-bold" href="proyects">
-            Proyects
-          </button>
+          <a class="btn strongblack fw-bold" href="#proyects">Proyects</a>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack fw-bold" href="about">
-            About
-          </button>
+          <a class="btn strongblack fw-bold" href="#about">About</a>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack fw-bold" href="skills">
-            Skills
-          </button>
+          <a class="btn strongblack fw-bold" href="#skills">Skills</a>
         </li>
         <li class="nav-item m-2">
-          <button type="button" class="btn strongblack fw-bold" href="contact">
-            Contact
-          </button>
+          <a class="btn strongblack fw-bold" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -61,7 +53,7 @@
 
 <body class="conteiner-fluid" id="backgroundanimado">
   <!--HOME-->
-  <div class="midblack">
+  <div class="midblack" id="home">
     <div class="row"></div>
     <div class="row">
       <div class="col-lg-1 d-lg-flex d-none stronggreen homesize"></div>
@@ -111,7 +103,132 @@
   </div>
   <!--HOME-->
   <!--PROYECTS-->
-  <div id="proyects">proyects</div>
+  <div id="proyects" class="border-top border-success">
+    <div class="row">
+      <p class="display-1 text-center text-white strongblack fw-semibold">
+        Proyects
+      </p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 strongblack">
+      <div class="col">
+        <div class="h-100 m-4">
+          <p-card [style]="{ width: '100%', overflow: 'hidden' }">
+            <ng-template pTemplate="header">
+              <img
+                alt="Card"
+                class="w-100"
+                src="https://primefaces.org/cdn/primeng/images/card-ng.jpg"
+              />
+            </ng-template>
+            <ng-template pTemplate="title"> Advanced Card </ng-template>
+            <ng-template pTemplate="subtitle"> Card subtitle </ng-template>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Inventore sed consequuntur error repudiandae numquam deserunt
+              quisquam repellat libero asperiores earum nam nobis, culpa ratione
+              quam perferendis esse, cupiditate neque quas!
+            </p>
+            <ng-template pTemplate="footer">
+              <p-button
+                label="Code"
+                class=""
+                icon="pi pi-github"
+                iconPos="right"
+                severity="contrast"
+                [rounded]="true"
+              />
+              <p-button
+                label="Demo"
+                class="ms-3"
+                iconPos="right"
+                icon="pi pi-arrow-right"
+                severity="warn"
+                [rounded]="true"
+              />
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 m-4">
+          <p-card [style]="{ width: '100%', overflow: 'hidden' }">
+            <ng-template pTemplate="header">
+              <img
+                alt="Card"
+                class="w-100"
+                src="https://primefaces.org/cdn/primeng/images/card-ng.jpg"
+              />
+            </ng-template>
+            <ng-template pTemplate="title"> Advanced Card </ng-template>
+            <ng-template pTemplate="subtitle"> Card subtitle </ng-template>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Inventore sed consequuntur error repudiandae numquam deserunt
+              quisquam repellat libero asperiores earum nam nobis, culpa ratione
+              quam perferendis esse, cupiditate neque quas!
+            </p>
+            <ng-template pTemplate="footer">
+              <p-button
+                label="Code"
+                class=""
+                icon="pi pi-github"
+                iconPos="right"
+                severity="contrast"
+                [rounded]="true"
+              />
+              <p-button
+                label="Demo"
+                class="ms-3"
+                iconPos="right"
+                icon="pi pi-arrow-right"
+                severity="warn"
+                [rounded]="true"
+              />
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 m-4">
+          <p-card [style]="{ width: '100%', overflow: 'hidden' }">
+            <ng-template pTemplate="header">
+              <img
+                alt="Card"
+                class="w-100"
+                src="https://primefaces.org/cdn/primeng/images/card-ng.jpg"
+              />
+            </ng-template>
+            <ng-template pTemplate="title"> Advanced Card </ng-template>
+            <ng-template pTemplate="subtitle"> Card subtitle </ng-template>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Inventore sed consequuntur error repudiandae numquam deserunt
+              quisquam repellat libero asperiores earum nam nobis, culpa ratione
+              quam perferendis esse, cupiditate neque quas!
+            </p>
+            <ng-template pTemplate="footer">
+              <p-button
+                label="Code"
+                class=""
+                icon="pi pi-github"
+                iconPos="right"
+                severity="contrast"
+                [rounded]="true"
+              />
+              <p-button
+                label="Demo"
+                class="ms-3"
+                iconPos="right"
+                icon="pi pi-arrow-right"
+                severity="warn"
+                [rounded]="true"
+              />
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--PROYECTS-->
   <!--ABOUT-->
   <div id="about" class="strongblack">about</div>

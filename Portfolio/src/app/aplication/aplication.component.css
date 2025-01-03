@@ -48,3 +48,8 @@
 .margin-start{
     margin-left: 100px;
 }
+a:active,
+a:focus{
+   background-color: #00e701;
+   color:black;
+}
