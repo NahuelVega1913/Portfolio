@@ -467,10 +467,100 @@
   <!--SKILSS-->
 
   <!--CONTACT-->
-  <div id="contact" class="lightblack mt-0 container-fluid">
+  <div id="contact" class="lightblack mt-0 container-fluid text-white">
     <div class="row">
-      <div class="col-6"></div>
-      <div class="col-6"></div>
+      <p class="display-2 text-center">Contact Me.</p>
+      <p class="text-center fw-bold" style="color: #fa933c">
+        Have a proyect in mind? Let's discuss in detail for better tomorrow.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col d-none d-lg-block"></div>
+      <div class="col-lg-5 col-sm-10">
+        <p class="display-6">Contact Info</p>
+        <br />
+
+        <p-button
+          label="Linkedin"
+          icon="pi pi-linkedin"
+          (onClick)="
+            redirectTo('https://www.linkedin.com/in/nahuel-vega-8b8010212/')
+          "
+          size="large"
+          severity="contrast"
+          [text]="true"
+        />
+        <br />
+        <p-button
+          class="user-select"
+          (onClick)="copyToClipboard()"
+          label="nahuelvegacsharp@gmail.com"
+          icon="pi pi-envelope"
+          size="large"
+          severity="contrast"
+          [text]="true"
+        />
+      </div>
+      <div class="col-lg-5 col-sm-10">
+        <p class="display-6">Message Me</p>
+        <div pFocusTrap class="w-full sm:w-80 flex flex-col gap-6">
+          <p-iconfield>
+            <p-inputicon>
+              <i class="pi pi-user"></i>
+            </p-inputicon>
+            <input
+              type="text"
+              pInputText
+              id="input"
+              [(ngModel)]="name"
+              type="text"
+              placeholder="Name"
+              [pAutoFocus]="true"
+              [fluid]="true"
+            />
+          </p-iconfield>
+
+          <p-iconfield class="mt-3">
+            <p-inputicon>
+              <i class="pi pi-envelope"> </i>
+            </p-inputicon>
+            <input
+              type="text"
+              pInputText
+              id="email"
+              [(ngModel)]="email"
+              type="email"
+              placeholder="Email"
+              [fluid]="true"
+            />
+          </p-iconfield>
+          <p-icon-field>
+            <p-iftalabel class="mt-3">
+              <textarea
+                pTextarea
+                id="description"
+                rows="4"
+                fluid="true"
+                [(ngModel)]="message"
+                style="resize: none"
+              ></textarea>
+              <label for="description">Message</label>
+            </p-iftalabel>
+          </p-icon-field>
+
+          <p-toast />
+          <p-button
+            type="submit"
+            pRipple
+            label="Submit"
+            (onClick)="save()"
+            class="mt-2 mb-4"
+            styleClass="w-full"
+            severity="warn"
+          />
+        </div>
+      </div>
+      <div class="col d-none d-lg-block"></div>
     </div>
   </div>
   <!--CONTACT-->

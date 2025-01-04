@@ -53,3 +53,7 @@ a:focus{
    background-color: #00e701;
    color:black;
 }
+.user-select{
+    user-select: text;
+    cursor: text;
+}
