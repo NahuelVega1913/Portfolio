@@ -231,12 +231,74 @@
   </div>
   <!--PROYECTS-->
   <!--ABOUT-->
-  <div id="about" class="strongblack">about</div>
+  <div id="about" class="lightblack pt-4 pb-5 container-fluid row">
+    <div class="col-lg-5 col-sm-12 m-4">
+      <div class="row display-6 san-serif text-white fw-medium">About Me</div>
+      <div class="row text-white fw-lighter fs-5">
+        I've always been interested in understanding how things work, which
+        naturally led me to the world of programming. I started exploring on my
+        own, with curiosity and patience, and over time I discovered a passion
+        for creating solutions that really work and make life easier for others.
+        Along the way, I’ve had the opportunity to learn technologies like .NET
+        and Java, and to work with databases and modern tools. It hasn't been a
+        straight path, but each challenge has helped me improve and made me
+        value constant learning even more. Today, I continue to build my career
+        with effort and dedication, always seeking to grow both professionally
+        and personally.
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-sm-12 m-4">
+      <div class="row">
+        <p class="display-6 text-white san-serif fw-medium">My Timeline</p>
+      </div>
+
+      <div class="card lightblack" style="border-color: #24272c">
+        <p-timeline
+          [value]="events"
+          align="alternate"
+          styleClass="customized-timeline"
+        >
+          <ng-template #marker let-event>
+            <span
+              class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm"
+              [style]="{ 'background-color': 'success' }"
+            >
+              <i [class]="event.icon"></i>
+            </span>
+          </ng-template>
+          <ng-template #content let-event>
+            <p-card
+              [header]="event.status"
+              [subheader]="event.date"
+              class="text-center"
+            >
+              <p
+                class="fw-lighter"
+                [innerText]="event.date + ' - ' + event.dateend"
+              ></p>
+              <img
+                *ngIf="event.image"
+                [src]="
+                  'https://avatars.githubusercontent.com/u/44374521?s=280&v=4'
+                "
+                [alt]="event.name"
+                width="150"
+                class="shadow"
+              />
+
+              <p class="mt-2 text-center" [innerText]="event.description"></p>
+            </p-card>
+          </ng-template>
+        </p-timeline>
+      </div>
+    </div>
+  </div>
   <!--ABOUT-->
 
   <!--SKILLS-->
   <div class="conteiner-fluid strongblack" id="skills">
-    <div class="row gradient"></div>
+    <div class="row"></div>
     <div class="row">
       <div class="col-12 mt-3">
         <h1 class="fw-bold display-2 text-center">SKILLS</h1>

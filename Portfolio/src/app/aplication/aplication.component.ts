@@ -25,6 +25,8 @@ import { IftaLabelModule } from 'primeng/iftalabel';
 import { MessageService } from 'primeng/api';
 import { Toast } from 'primeng/toast';
 import { Ripple } from 'primeng/ripple';
+import { Timeline } from 'primeng/timeline';
+
 import emailjs from 'emailjs-com';
 
 @Component({
@@ -45,6 +47,7 @@ import emailjs from 'emailjs-com';
     AutoFocusModule,
     ReactiveFormsModule,
     Carousel,
+    Timeline,
     Toast,
     Ripple,
     TagModule,
@@ -64,10 +67,32 @@ export class AplicationComponent {
   accept: boolean = false;
 
   products: undefined[] | undefined;
-
+  events: any[];
   responsiveOptions: any[] | undefined;
 
-  constructor(private messageService: MessageService) {}
+  constructor(private messageService: MessageService) {
+    this.events = [
+      {
+        status: 'Studies',
+        date: '01/2023 ',
+        dateend: '11/2024',
+        icon: 'pi pi-building-columns',
+        color: '#9C27B0',
+        image: 'https://avatars.githubusercontent.com/u/44374521?s=280&v=4',
+        description:
+          'In this university, over the course of 2 years, I have obtained the title of Technical Degree in Programming. This program has provided me with a solid foundation in various programming languages and modern development tools, preparing me to tackle real-world challenges in the field of software development.',
+      },
+      {
+        status: 'Developing',
+        date: '11/2024',
+        dateend: 'Present',
+        icon: 'pi pi-briefcase',
+        color: '#673AB7',
+        description:
+          'Currently, I am freelancing, offering tailored solutions to meet diverse client needs while managing projects independently and ensuring high-quality results.',
+      },
+    ];
+  }
 
   save() {
     if (this.name === '' || this.email === '' || this.message === '') {
