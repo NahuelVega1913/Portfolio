@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { AplicationComponent } from './aplication/aplication.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, AplicationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Portfolio';
+  redirectToG() {
+    window.location.href = 'https://github.com/NahuelVega1913';
+  }
+  redirectToL() {
+    window.location.href = 'https://www.linkedin.com/in/nahuel-vega-8b8010212/';
+  }
 }
