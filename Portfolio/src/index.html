@@ -19,7 +19,7 @@
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0x99bbcc	,
+  color: 229954	,
   backgroundColor: 0xffffff
         });
       });
@@ -92,16 +92,15 @@
               role="separator"
               aria-label="Divider"
             >
-            <div class="flex flex-col mx-auto">
-              <h1 class="text-7xl ">Hi there,I'm</h1>
-              <p class="text-8xl font-semibold ">Nahuel Vega</p>
-              <p class="text-4xl font-semibold mt-3">Fullstack Developer </p>
-            </div class="flex flex-col justify-start items-start w-100">
+            <div class="flex flex-col  justify-center">
+              <h1 class="text-6xl md:text-7xl ">Hi there,I'm</h1>
+              <p class="text-7xl md:text-8xl font-semibold ">Nahuel Vega</p>
+              <p class="text-3xl md:text-4xl font-semibold mt-3">Fullstack Developer </p>
+            </div class="flex flex-col justify-center  w-100">
               <div
-                class="rounded-full   bg-white position-absolute w-80 h-80 mx-auto mt-10 overflow-hidden flex items-center justify-center border-gray-700 border-1 shadow-lg"
+                class="rounded-full   bg-white position-absolute w-60 md:w-80 h-60 md:h-80  mt-10 overflow-hidden flex items-center justify-center border-gray-700 border-1 shadow-lg"
               >
                 <img src="foto1.png" alt="" class="object-contain w-5/5 h-5/5 " />
-
               </div>
             </div>
             <!--IMAGEN-->
@@ -248,10 +247,10 @@
             </div>
             <!--SKILLS-->
             <!--CONTACT-->
-            <div id="contact" class="h-full bg-white shadow-2xl p-10 border-t-2">
+            <div id="contact" class="h-full bg-white shadow-2xl p-5 border-t-2">
               <p class="text-center mt-5 text-4xl font-semibold">Contact Me</p>
               <p class="text-gray-700 text-xl text-center">Have a project in mind? Let's discuss in detail for better tomorrow</p>
-              <div class="flex flex-col md:flex-row mt-5 pe-20 ps-20 justify-between ">
+              <div class="flex flex-col md:flex-row mt-5 w-full  justify-center ">
                 <div class="flex flex-col p-5">
                   <p class="text-center text-3xl">Contact Info</p>
 
@@ -271,9 +270,9 @@
                     LinkedIn
                     </button>
                 </div>
-                <div class="flex flex-col p-5 w-100 justify-end">
+                <div class="flex flex-col  w-1/1 md:w-1/2 p-5 justify-center">
                     <P class="text-start text-3xl">Message Me</P>
-                 <form class="w-full mt-3" id="contact-form" onsubmit="return save(event)">
+                 <form class=" w-1/1 md:w-1/2 mt-3" id="contact-form" onsubmit="return save(event)">
                     <div>
                     <label for="name" class="block mb-2 text-md font-medium text-gray-700 ">Name</label>
                      <input type="text" id="name" class="bg-gray-50 border-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="John" required />
@@ -284,14 +283,12 @@
                      </div>
                      <div class="mb-6">
                       <label for="message" class="block mb-2 text-md font-medium text-gray-900 ">Message</label>
-                      <input type="text" id="message" class="block w-full p-4 text-gray-900 border-2 border-gray-300 text-sm rounded-lg bg-gray-50  focus:ring-blue-500 focus:border-blue-500 " required>
-                          </div>
+                      <input type="text" id="message" class="block w-full p-2 text-gray-900 border-2 border-gray-300 text-sm rounded-lg bg-gray-50  focus:ring-blue-500 focus:border-blue-500 " required>
+                      </div>
                           <button type="submit" class="w-full bg-gray-700 text-white rounded-xl h-10">Submit</button>
                    </form>
                 </div>
-                <div>
-                  <p></p>
-                </div>
+              
               </div>
             </div>
                <!--CONTACT-->
